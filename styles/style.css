@@ -1,0 +1,140 @@
+/* Import Font: Quicksand */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/* Variables */
+:root {
+  --color-orange: rgb(254, 163, 1);
+  --color-skyblue: rgb(1, 172, 253);
+  --color-cyan: rgb(5, 212, 223);
+  --color-purple: rgb(93, 88, 239);
+  --color-white: rgb(247, 247, 247);
+  --color-black: rgb(30, 30, 30);
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Quicksand, sans-serif;
+  max-width: 1440px;
+}
+
+/* Common style */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Common Colors */
+.text-orange {
+  color: var(--color-orange);
+}
+
+.text-skyblue {
+  color: var(--color-skyblue);
+}
+
+.text-cyan {
+  color: var(--color-cyan);
+}
+
+.text-purple {
+  color: var(--color-purple);
+}
+
+.container {
+  display: flex;
+}
+/* For all the 'rem' next */
+html {
+  font-size: 20px;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background: url("../assets/bg.png");
+  color: var(--color-black);
+  padding: 0.3rem 7rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.navbar .logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .logo-text {
+  font-size: 1.6rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
+.nav-button {
+  background: var(--color-orange);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 3rem;
+  border-radius: 0.6rem;
+  border-color: transparent;
+  color: var(--color-white);
+}
+
+/* Main */
+main {
+  background: url("../assets/bg.png");
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: var(--color-skyblue);
+  padding: 6rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: var(--color-white);
+}
+
+footer.container {
+  align-items: flex-start;
+}
+
+footer .nav-links {
+  display: flex;
+  flex-direction: column;
+}
